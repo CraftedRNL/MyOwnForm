@@ -14,8 +14,7 @@
 
         }
 
-        .s1,
-        .s2 {
+        .s1 {
             display: block;
         }
     </style>
@@ -36,8 +35,8 @@
                 <label class="s1" for="username">Your Name</label>
                 <input required id="username" type="text" name="username">
             </div>
-            <div style="float:left;" >
-                <label class="s2" for="appliancetype">Appliance Type</label>
+            <div style="float:left;">
+                <label class="s1" for="appliancetype">Appliance Type</label>
                 <select name="appliancetype" id="atype">
                     <option value="blender">Blender</option>
                     <option value="waffmaker">Waffle Maker</option>
@@ -47,22 +46,31 @@
             </div>
         </section>
         <br><br><br>
-        <label for="date">Appointment Date</label>
-        <label for="time">Preferred Time</label>
-        <br>
-        <input required id="date" name="date" type="date">
-        <input required id="time" name="time" type="time">
-        <br>
-        <label for="mail">Email Address</label>
-        <label for="pnumber">Phone Number</label>
-        <br>
+        <section>
+            <div style="float:left;margin-right:20px;">
+                <label class="s1" for="date">Appointment Date</label>
+                <input required id="date" name="date" type="date">
+            </div>
+            <div style="float:left;">
+                <label class="s1" for="time">Preferred Time</label>
+                <input required id="time" name="time" type="time">
+            </div>
+        </section>
+        <br><br><br>
+        <section>
+            <div style="float:left;margin-right:20px;">
+        <label class="s1" for="mail">Email Address</label>
         <input required id="mail" type="email" name="mail">
+    </div>
+    <div style="float:left;">
+        <label class="s1" for="pnumber">Phone Number</label>
         <input required id="pnumber" type="tel" name="pnumber">
+    </div>
+</section>
         <br>
         <label for="city">City</label>
-        <label for="address">Street Address</label>
-        <br>
         <input required id="city" type="text" name="city">
+        <label for="address">Street Address</label>
         <input required id="address" type="text" name="address">
         <br>
         <label for="message">Your Message</label>
