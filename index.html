@@ -2,83 +2,77 @@
 <html lang="en">
 
 <head>
-    <style>
-        .pic {
-            float: left;
-        }
-
-        input,
-        select {
-            width: 200px;
-            height: 30px;
-
-        }
-
-        .s1 {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
     <title>My form</title>
 </head>
 
 <body>
-    <div>
-        <img class="pic" src="img\pngtree-cute-watercolor-fruit-mobile-wallpaper-image_752110.jpg">
-    </div>
-    <div class="center">
-        <h1>Book An Appointment Online!</h1>
-        <p>We have the best specialists in your region. Quality guarantee and professionalism are out slogan!</p>
-    </div>
-    <form method="POST" action="/practice.html">
-        <section>
-            <div style="float:left;margin-right:20px;">
-                <label class="s1" for="username">Your Name</label>
-                <input required id="username" type="text" name="username">
+    <div class="space">
+        <div>
+            <img class="pic" width="235px" src="img\pngtree-cute-watercolor-fruit-mobile-wallpaper-image_752110.jpg">
+        </div>
+        <div class="center">
+            <h1 class="Mleft">Book An Appointment Online!</h1>
+            <p class="Mleft">We have the best specialists in your region. Quality guarantee and professionalism are out slogan!</p>
+        </div>
+        <form method="POST" action="/practice.html">
+            <section>
+                <div class="leftup">
+                    <label class="s1" for="username">Your Name</label>
+                    <input required id="username" type="text" name="username">
+                </div>
+                <div class="floating">
+                    <label class="s1" for="appliancetype">Appliance Type</label>
+                    <select name="appliancetype" id="atype">
+                        <option value="blender">Blender</option>
+                        <option value="waffmaker">Waffle Maker</option>
+                        <option value="vaccum">Vaccum</option>
+                        <option value="fridge">Fridge</option>
+                    </select>
+                </div>
+            </section>
+            <br><br><br>
+            <section>
+                <div class="leftup">
+                    <label class="s1" for="date">Appointment Date</label>
+                    <input required id="date" name="date" type="date">
+                </div>
+                <div class="floating">
+                    <label class="s1" for="time">Preferred Time</label>
+                    <input required id="time" name="time" type="time">
+                </div>
+            </section>
+            <br><br><br>
+            <section>
+                <div class="leftup">
+                    <label class="s1" for="mail">Email Address</label>
+                    <input required id="mail" type="email" name="mail">
+                </div>
+                <div class="floating">
+                    <label class="s1" for="pnumber">Phone Number</label>
+                    <input required id="pnumber" type="tel" name="pnumber">
+                </div>
+            </section>
+            <br><br><br>
+            <div class="leftup">
+                <label class="s1" for="city">City</label>
+                <input required id="city" type="text" name="city">
             </div>
-            <div style="float:left;">
-                <label class="s1" for="appliancetype">Appliance Type</label>
-                <select name="appliancetype" id="atype">
-                    <option value="blender">Blender</option>
-                    <option value="waffmaker">Waffle Maker</option>
-                    <option value="vaccum">Vaccum</option>
-                    <option value="fridge">Fridge</option>
-                </select>
+            <div class="floating">
+                <label class="s1" for="address">Street Address</label>
+                <input required id="address" type="text" name="address">
             </div>
-        </section>
-        <br><br><br>
-        <section>
-            <div style="float:left;margin-right:20px;">
-                <label class="s1" for="date">Appointment Date</label>
-                <input required id="date" name="date" type="date">
+            <br><br><br>
+            <div class="leftup">
+                <label class="s1" for="message">Your Message</label>
+                <textarea id="message" name="message" rows="3" cols="30"
+                    placeholder="Please describe your problem"></textarea>
+                <p class="dleft">By clicking sumbit, you agree to our updated Privacy Policy terms and conditions.</p>
             </div>
-            <div style="float:left;">
-                <label class="s1" for="time">Preferred Time</label>
-                <input required id="time" name="time" type="time">
-            </div>
-        </section>
-        <br><br><br>
-        <section>
-            <div style="float:left;margin-right:20px;">
-        <label class="s1" for="mail">Email Address</label>
-        <input required id="mail" type="email" name="mail">
+            <br><br><br><br><br><br>
+            <input class="blu" type="submit">
+        </form>
     </div>
-    <div style="float:left;">
-        <label class="s1" for="pnumber">Phone Number</label>
-        <input required id="pnumber" type="tel" name="pnumber">
-    </div>
-</section>
-        <br>
-        <label for="city">City</label>
-        <input required id="city" type="text" name="city">
-        <label for="address">Street Address</label>
-        <input required id="address" type="text" name="address">
-        <br>
-        <label for="message">Your Message</label>
-        <br>
-        <textarea id="message" name="message" rows="3" cols="40" placeholder="Please describe your problem"></textarea>
-        <p>By clicking sumbit, you agree to our updated Privacy Policy terms and conditions.</p>
-        <input type="submit">
-    </form>
 
 </body>
 
