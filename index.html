@@ -9,11 +9,13 @@
 <body>
     <div class="space">
         <div>
-            <img class="pic" width="235px" src="img\pngtree-cute-watercolor-fruit-mobile-wallpaper-image_752110.jpg">
+            <img class="pic" width="225px" 
+                src="img\pngtree-cute-watercolor-fruit-mobile-wallpaper-image_752110.jpg">
         </div>
         <div class="center">
             <h1 class="Mleft">Book An Appointment Online!</h1>
-            <p class="Mleft">We have the best specialists in your region. Quality guarantee and professionalism are out slogan!</p>
+            <p class="Mleft">We have the best specialists in your region. Quality guarantee and professionalism are out
+                slogan!</p>
         </div>
         <form method="POST" action="/practice.html">
             <section>
@@ -22,7 +24,7 @@
                     <input required id="username" type="text" name="username">
                 </div>
                 <div class="floating">
-                    <label class="s1" for="appliancetype">Appliance Type</label>
+                    <label class="s2" for="appliancetype">Appliance Type</label>
                     <select name="appliancetype" id="atype">
                         <option value="blender">Blender</option>
                         <option value="waffmaker">Waffle Maker</option>
@@ -38,7 +40,7 @@
                     <input required id="date" name="date" type="date">
                 </div>
                 <div class="floating">
-                    <label class="s1" for="time">Preferred Time</label>
+                    <label class="s2" for="time">Preferred Time</label>
                     <input required id="time" name="time" type="time">
                 </div>
             </section>
@@ -49,7 +51,7 @@
                     <input required id="mail" type="email" name="mail">
                 </div>
                 <div class="floating">
-                    <label class="s1" for="pnumber">Phone Number</label>
+                    <label class="s2" for="pnumber">Phone Number</label>
                     <input required id="pnumber" type="tel" name="pnumber">
                 </div>
             </section>
@@ -59,17 +61,21 @@
                 <input required id="city" type="text" name="city">
             </div>
             <div class="floating">
-                <label class="s1" for="address">Street Address</label>
+                <label class="s2" for="address">Street Address</label>
                 <input required id="address" type="text" name="address">
             </div>
             <br><br><br>
             <div class="leftup">
-                <label class="s1" for="message">Your Message</label>
-                <textarea id="message" name="message" rows="3" cols="30"
+                <label class="special" for="message">Your Message</label>
+                <textarea class="special" id="message" name="message" rows="3" cols="66"
                     placeholder="Please describe your problem"></textarea>
                 <p class="dleft">By clicking sumbit, you agree to our updated Privacy Policy terms and conditions.</p>
             </div>
-            <br><br><br><br><br><br>
+            <br><br><br><br><br><br><br>
+            <label class="no" for="human">I'm not a robot </label>
+                <input class="nom" type="checkbox" id="human" name="human">
+               
+
             <input class="blu" type="submit">
         </form>
     </div>

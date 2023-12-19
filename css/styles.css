@@ -1,46 +1,87 @@
 .pic {
     float: left;
+    object-fit: fill;
     border: .5px solid black;
+    height: 725px;
+}
+
+input,
+select,
+textarea {
+    margin-left: 75px;
 }
 
 input,
 select {
     width: 200px;
     height: 30px;
-    margin-left: 50px;
 }
 
 .s1 {
     display: block;
 }
+
 .leftup {
-    float:left;
-    margin-right:20px;
-}
-.floating {
     float: left;
+    margin-right: 20px;
 }
+
 p {
     font-size: small;
     font-weight: lighter;
-    margin-left: 10px;
+    position: relative;
+    left: 75px;
 }
+
 .space {
     border: 2px solid black;
     width: 950px;
-    margin-left: 500px;
-    margin-top: 100px;
+    margin: auto;
+    background-color: rgb(255, 227, 255)
 }
 
 .blu {
     color: black;
-    background-color: rgb(71, 71, 255);
-    right: 100px;
-    margin-left: 150px;
+    background-color: rgb(151, 151, 250);
+    position: relative;
+    left: 290px;
+    bottom: 80px;
 }
-label, textarea {
-    margin-left: 50px ;
-}
+
 .dleft {
-    margin-left: 120px;
+    position: relative;
+    bottom: 60px;
+}
+
+label {
+    margin-left: 130px;
+}
+
+.s2 {
+    display: block;
+    position: relative;
+    left: 130px;
+}
+
+h1 {
+    position: relative;
+    left: 125px;
+}
+
+.special {
+    display: block;
+    position: relative;
+    left: 1px;
+    bottom: 50px;
+}
+
+.no {
+    position: relative;
+    bottom: 60px;
+    right: 20px;
+}
+.nom {
+    position: relative;
+    bottom: 50px;
+    right: 160px;
 }
